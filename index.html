@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sharanya's Aesthetic Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>🌷 Sharanya's Aesthetic Notes 🌷</h1>
+  <p>Created by Sharanya</p>
+</header>
+
+<div class="toolbar">
+  <select id="fontSelect">
+    <option value="'Patrick Hand', cursive">Handwriting 1</option>
+    <option value="'Pacifico', cursive">Handwriting 2</option>
+    <option value="'Quicksand', sans-serif">Clean Notes</option>
+  </select>
+
+  <input type="color" id="highlightColor" value="#f6c1d1">
+  <button onclick="highlightText()">Highlight</button>
+
+  <input type="file" accept="image/*" onchange="addImage(event)">
+  <button onclick="changeBackground()">Change Background</button>
+</div>
+
+<div id="noteArea" contenteditable="true">
+  Start writing your aesthetic notes here 🌸
+</div>
+
+<div class="ai-tools">
+  <button onclick="makeFlashcards()">🧠 Make Flashcards</button>
+  <button onclick="simplifyNotes()">✨ Simplify Notes</button>
+</div>
+
+<div id="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
